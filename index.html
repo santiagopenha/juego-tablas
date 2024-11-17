@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Tablas de Multiplicar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Juego de Tablas de Multiplicar</h1>
+    <div id="game">
+        <label for="tableSelect">Elige una tabla de multiplicar:</label>
+        <select id="tableSelect" onchange="changeTable()">
+            <option value="2">Tabla del 2</option>
+            <option value="3">Tabla del 3</option>
+            <option value="4">Tabla del 4</option>
+            <option value="5">Tabla del 5</option>
+            <option value="6">Tabla del 6</option>
+            <option value="7">Tabla del 7</option>
+            <option value="8">Tabla del 8</option>
+            <option value="9">Tabla del 9</option>
+            <option value="10">Tabla del 10</option>
+        </select>
+        <button onclick="startGame()">Empezar</button>
+        <div id="level">Nivel: 1</div>
+        <div id="question"></div>
+        <input type="number" id="answer" placeholder="Escribe tu respuesta" />
+        <div id="score">Puntaje: $0</div>
+        <div id="message"></div>
+    </div>
+    <div id="errors">
+        <h2>Errores</h2>
+        <ul id="errorList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
